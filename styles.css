@@ -1,0 +1,108 @@
+@import url('https://fonts.googleapis.com/css2?family=Pattaya&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background: linear-gradient(90deg, #efd5ff 0%, #515ada 100%);
+}
+.contenedor{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh; 
+    
+}
+.titulo{
+    font-size: 3rem;
+    color: rgb(73, 27, 0);
+    font-family: 'Pattaya', sans-serif;
+    
+}
+.botones{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 300px;
+    margin: 1rem 0;
+    
+}
+.boton{
+    padding: .8rem 2rem;
+    border-radius: 4rem;
+    background: blue;
+    border: none;
+    color: #fff;
+    box-shadow: 3px 3px 10px 1px rgba(0,0,0,0.7);
+    font-weight: bold;
+    font-size: 1.3rem;
+    cursor: pointer;
+}
+.imagen{
+    width: 50%;
+}
+img{
+    width: 100%;
+}
+
+
+.modal {
+    visibility: hidden;
+    opacity: 0;
+    transition: visibility 0s, opacity .8s;
+    position: fixed; /* Stay in place */
+    z-index: 2000; /* Sit on top */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+  
+  /* Modal Content/Box */
+  .modal-content-thank {
+    background-color: #fefefe;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    gap: 1rem;
+    padding: 2rem 1rem;
+    border-radius: 8px;
+    border: 1px solid #888;
+    width: 400px; /* Could be more or less, depending on screen size */
+}
+    .modal-content-thank__heard{
+        width: 300px;
+    }
+    .modal-content-thank__heard img{
+        width: 100%;
+    }
+    .modal-content-thank__btn{
+        background: rgb(250, 59, 59);
+        color: #fff;
+        padding: 1rem 2rem;
+        border-radius: 2rem;
+        font-weight: 700;
+        font-size: 15px;
+        cursor: pointer;
+        border: none;
+        
+    }
+    .modal-content-thank__btn:hover{
+        background: hsl(176, 90%, 39%);
+    }
+
+    .active{
+        visibility: visible;
+        opacity: 1;
+    }
